@@ -45,5 +45,10 @@ public class Stream_parallel {
         })
         .forEach(i -> System.out.println(i));
         System.out.println(System.currentTimeMillis() - start3);
+
+        /*
+        ORM에서 lazy fetch인 경우는 parallel stream사용하면 안됨
+        eager fetch면 OK
+        */
     }
 }
